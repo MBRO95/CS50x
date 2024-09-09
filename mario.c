@@ -10,14 +10,15 @@ int main(void)
     int i = -1;
     while (i <= 0 || i > 8)
     {
-        i = get_int ("Please enter a positive height value between 0-8: ");
+        i = get_int("Please enter a positive height value between 0-8: ");
     }
-    //printf("Height: %i\n", i);
+    // printf("Height: %i\n", i);
     brick_builder(i);
 }
 
-void brick_builder(int n){
-    for(int i = 1; i <= n; i++)
+void brick_builder(int n)
+{
+    for (int i = 1; i <= n; i++)
     {
         print_space(n - i);
         print_brick(i);
@@ -27,15 +28,17 @@ void brick_builder(int n){
     }
 }
 
-void print_space(int n){
-    for(int i = 0; i < n; i++)
+void print_space(int n)
+{
+    for (int i = 0; i < n; i++)
     {
         printf(" ");
     }
 }
 
-void print_brick(int n){
-    for(int i = 0; i < n; i++)
+void print_brick(int n)
+{
+    for (int i = 0; i < n; i++)
     {
         printf("#");
     }
