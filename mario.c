@@ -12,7 +12,7 @@ int main(void)
     {
         i = get_int ("Please enter a positive height value between 0-8: ");
     }
-    printf("Height: %i\n", i);
+    //printf("Height: %i\n", i);
     brick_builder(i);
 }
 
