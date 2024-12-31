@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Track";
+    src: url("../fonts/Track/Track-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Track/Track-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Track/Track-Regular.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Track/Track-Regular.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Track/Track-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Track/Track-Regular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Track/Track-Regular.woff2") format("woff2");
+    /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Grandview";
+    src: url("../fonts/Grandview/Grandview.eot");
+    /* IE9*/
+    src: url("../fonts/Grandview/Grandview.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Grandview/Grandview.woff2") format("woff2"), /* chrome、firefox */
+    url("../fonts/Grandview/Grandview.woff") format("woff"), /* chrome、firefox */
+    url("../fonts/Grandview/Grandview.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("../fonts/Grandview/Grandview.svg#Grandview") format("svg");
+    /* iOS 4.1- */
+}

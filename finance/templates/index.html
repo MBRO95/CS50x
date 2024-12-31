@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+        <h1>Portfolio</h1>
+        <h2>Total Portfolio Balance: {{ portfolioBalance }}</h2>
+        <hr></hr>
+        <h2>Cash Balance: {{ cashBalance }}</h2>
+        <hr></hr>
+        <table style="text-align: center; margin: auto">
+            <thead>
+                <tr>
+                    <th style="width: 10%;">Symbol</th>
+                    <th style="width: 10%;">Market Price</th>
+                    <th style="width: 10%;">Shares Owned</th>
+                    <th style="width: 15%;">Portfolio Value</th>
+                    <th style="width: 15%;">Profit or Loss</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Loop through the stocks dictionary to display them in this table -->
+                {% for stock in stocks %}
+                <tr>
+                    <td>
+                        {{ stock }}
+                    </td>
+                    <td>
+                        {{ stocks[stock]["currentPrice"] }}
+                    </td>
+                    <td>
+                        {{ stocks[stock]["shares"] }}
+                    </td>
+                    <td>
+                        {{ stocks[stock]["positionValue"] }}
+                    </td>
+                    <td>
+                        {{ stocks[stock]["pl"] }}
+                    </td>
+                </tr>
+                {% endfor %}
+                <tr>
+                    <td style="width: 10%;">
+                        -
+                    </td>
+                    <td style="width: 10%;">
+                        -
+                    </td>
+                    <td style="width: 10%;">
+                        -
+                    </td>
+                    <td style="width: 15%;">
+                        <strong>{{ stocksBalance }}</strong>
+                    </td>
+                    <td style="width: 15%;">
+                        <strong>{{ plTotal }}</strong>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

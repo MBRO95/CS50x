@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block includes %}
+    <script src="/static/js/validation.js" defer></script>
+{% endblock %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block main %}
+    <h1 class="text-center">Optimized Day Planner</h1>
+    {% if error %}
+        <div class="alert alert-dismissible alert-danger my-1">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Error:</strong>{{ error }}
+        </div>
+    {% endif %}
+    <form id="schedule-form" method="POST" action="/dashboard" class="py-4 w-50 mx-auto">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="user_id" name="user_id" placeholder="Enter your ID" required autofocus>
+            <label for="user_id">User ID</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Enter your name" required>
+            <label for="user_name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="time" class="form-control" id="wake_time" name="wake_time" required>
+            <label for="wake_time">Typical Wake Time</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input
+            type="time"
+            class="form-control"
+            id="bedtime"
+            name="bedtime"
+            required
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="If bedtime is earlier than wake time, it will be assumed to be the next day.">
+            <label for="bedtime">Typical Bedtime</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="sleep_duration" name="sleep_duration" placeholder="Enter your desired sleep duration" required>
+            <label for="sleep_duration">Desired Sleep Duration (hours)</label>
+        </div>
+        <div class="form-check form-switch mb-3 d-flex align-items-center">
+            <input class="form-check-input me-2" type="checkbox" id="include_intimacy" name="include_intimacy">
+            <label class="form-check-label" for="include_intimacy">
+                Include Intimacy Window
+            </label>
+        </div>
+        <div id="error-message" class="alert alert-danger d-none my-3" role="alert"></div>
+        <button type="submit" class="btn btn-primary">Generate Schedule</button>
+    </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            const tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+{% endblock %}
