@@ -1,0 +1,545 @@
+body {
+    background-color: #3199BB;
+    font-family: 'Grandview', sans-serif;
+    padding: 12px;
+    /*padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);*/
+    padding-top: env(safe-area-inset-top);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+}
+
+#installAppButton {
+    border: .25rem solid #3199BB !important;
+    border-radius: 1rem !important;
+    background-color: #F8991D !important;
+    font-weight: bold;
+    color: #434343 !important;
+}
+
+.splock {
+    display: none;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
+.welcome {
+    background-color: #F8991D;
+    border: 1em solid #F8991D !important;
+}
+
+.tab-content.container {
+    background-color: #e9e9e9;
+}
+
+.footer {
+    background-color: #434343;
+    color: #F8991D;
+}
+
+.icon-sizing {
+    font-size: 3em;
+}
+
+.icon-svg {
+    height: 2.75em;
+    position: relative;
+}
+
+.icon-company {
+    height: 6em;
+    margin: 7.5% 0% 0% 0%;
+}
+
+.card-body {
+    padding: 1.25rem 1.25em 0em 1.25em;
+}
+
+.card-body p {
+    font-size: .75em;
+}
+
+.education {
+    max-width: 100%;
+    border: #696969 .25em solid;
+}
+
+ul.card-text {
+    font-size: .75em;
+}
+
+a {
+    color: #3199BB;
+}
+
+h2,
+.card-title,
+.card-header {
+    font-family: 'Track' !important;
+}
+
+.custom-nav {
+    background-color: #3199BB;
+    font-family: 'Track' !important;
+}
+
+.custom-jumbotron {
+    background-color: #434343;
+    color: #3199BB;
+    font-family: 'Track' !important;
+}
+
+.custom-jumbotron a {
+    color: #F8991D;
+}
+
+.custom-jumbotron a:hover {
+    color: #3199BB;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    height: 12em;
+}
+
+.h1-hr {
+    margin-bottom: 1rem;
+    margin-top: .25rem;
+    width: 100%;
+    line-height: initial;
+    border-bottom: .25rem solid #F8991D;
+    text-align: center;
+}
+
+.h1-hr span {
+    color: #F8991D;
+    font-family: "Track";
+    font-size: 1.25rem;
+    background-color: #e9e9e9;
+    padding: 0 .5em 0 .5em;
+}
+
+.tab-pane {
+    font-size: 1.125rem;
+    color: #434343;
+}
+
+.jumbotron {
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.jumbotron p {
+    font-size: .75em;
+}
+
+blockquote {
+    font-size: 1.15rem;
+    font-style: italic;
+    margin: 0.25em 0;
+    padding: 0.35em 2em;
+    line-height: 1.45;
+    position: relative;
+    color: #434343;
+}
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 5em;
+    position: absolute;
+    left: -.2em;
+    top: -.2em;
+    color: #434343;
+}
+
+blockquote cite {
+    color: #e9e9e9;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+.responsive-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-left: .5em;
+}
+
+.dummy {
+    padding-top: 100%;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font: 0/0 a;
+}
+
+.img-container .centerer {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.img-container img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.title-center {
+    font-family: 'Track' !important;
+}
+
+.title-color {
+    color: #F8991D;
+}
+
+@media only screen and (max-width: 767px) {
+    .responsive-container {
+        margin-left: 0;
+    }
+
+    .dummy {
+        padding-top: 50%;
+    }
+
+    small.float-right {
+        float: none !important;
+    }
+
+    .title-center {
+        text-align: center;
+    }
+
+    .content-center {
+        text-align: center;
+    }
+
+    .date-format {
+        margin-bottom: .5em;
+        margin-top: -.5em;
+    }
+
+    #jobDetails {
+        margin-bottom: .5em;
+        margin-top: -.5em;
+    }
+
+    .img-container img {
+        max-height: 75%;
+        max-width: 75%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .icon-company {
+        margin: 50% 5% 10% 10% !important;
+    }
+}
+
+@media only screen and (min-width: 300px) {
+    .typewriter h1 {
+        animation: typing-300 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+
+    .h1-hr {
+        border-bottom: .125rem solid #F8991D !important;
+    }
+
+    h2,
+    h4 {
+        font-size: 1.25rem !important;
+    }
+
+    h5 {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (min-width: 350px) {
+    .typewriter h1 {
+        animation: typing-350 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .typewriter h1 {
+        animation: typing-400 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .h1-hr {
+        margin-bottom: 3rem !important;
+        height: .75rem !important;
+    }
+
+    .h1-hr span {
+        font-size: 2rem !important;
+    }
+
+    .typewriter h1 {
+        animation: typing-800 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .icon-company {
+        margin: 20% 5% 5% 0% !important;
+    }
+
+    .typewriter h1 {
+        animation: typing-1000 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .icon-company {
+        margin: 20% 5% 5% 0% !important;
+    }
+
+    .typewriter h1 {
+        animation: typing-1200 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .typewriter h1 {
+        animation: typing-1300 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .typewriter h1 {
+        animation: typing-1400 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .typewriter h1 {
+        animation: typing-1600 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .typewriter h1 {
+        animation: typing-1800 2.75s steps(19, end), blink-caret .75s infinite ease !important;
+    }
+}
+
+.card-text:last-child {
+    margin-bottom: 1.5em;
+}
+
+
+/* -----------------------
+Social Styles
+------------------------*/
+
+#repl,
+#tw,
+#li,
+#gi {
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #ffffff;
+    background-color: #F8991D;
+}
+
+.nav-pills .nav-link.active:hover {
+    color: #434343 !important;
+}
+
+.nav-pills .nav-link {
+    font-weight: bold;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    width: 10em;
+    border-right: .125em solid #F8991D;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .1em;
+    /* Adjust as needed */
+    animation: typing 2.75s steps(19, end), blink-caret .75s infinite ease;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 75%
+    }
+}
+
+@keyframes typing-300 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 65%
+    }
+}
+
+@keyframes typing-350 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 55%
+    }
+}
+
+@keyframes typing-400 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 52.5%
+    }
+}
+
+@keyframes typing-800 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 56.5%
+    }
+}
+
+@keyframes typing-1000 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 60%
+    }
+}
+
+@keyframes typing-1200 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 50%
+    }
+}
+
+@keyframes typing-1300 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 45%
+    }
+}
+
+@keyframes typing-1400 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 41.5%
+    }
+}
+
+@keyframes typing-1600 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 37.5%
+    }
+}
+
+@keyframes typing-1800 {
+    from {
+        width: 0%
+    }
+
+    to {
+        width: 35%
+    }
+}
+
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #F8991D;
+    }
+}
+
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 42em) {
+    .social-header {
+        width: 8.5em;
+        position: relative;
+        display: block;
+    }
+
+    .logo {
+        position: relative;
+        display: block;
+        /*height:inherit;*/
+    }
+}
+
+@media (max-width: 37.5em) {
+    .typewriter h1 {
+        font-size: 1.75rem !important;
+    }
+}
+

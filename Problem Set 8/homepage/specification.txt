@@ -1,0 +1,27 @@
+Many HTML, CSS, and JS elements were utilized in this project, below are a couple highlights for disclosures sake. This is a personal website I coded nearly all of.
+It does utilize open-source libraries like bootstrap, validator, jquery, popper, devicon, and some web fonts as well.
+
+HTML Elements Utilized:
+
+1. object - used to display svg-based graphics in a native format while being able to control sizing much better than an img tag.
+2. button - used to provide targeted user interaction in various spots of the site, including the navbar.
+3. ul - unordered list to provided bullet point format to text.
+4. li - an element of an unordered list.
+5. nav - overarching navigation bar component from bootstrap with very useful default sylings and behavior, especially in the responsive realm.
+6. img - used to display common image formats and can be sized and styled easily with built-in descriptors.
+7. span - used to indicate a special section of text; I utilize this for some the in-page headings to provide an accent text
+8. sup - as a play on my initials being MM, I use the moniker mr. m^2 with the 2 representing an exponent. sup is an element to display this exponent notation.
+9. h5 - Heading 5, the fifth smallest heading structure and used to distinguish important words, call outs, and to draw extra attention.
+10. p - paragraph elements are used in multiple places throughout the site for long-form prose.
+
+CSS Properties Utilized:
+1. font-family - used to specify specific font family(s) to be used for particular elements
+2. position - used to describe the type of positioning an element should have; relative and absolute are used often for positioning of fixed objects and then object that should react to neighboring elements.
+3. z-index - used to provide a third dimension to web design, this controls which elements are stacked on top of or behind one another.
+4. color: rgba(233, 233, 233, .5); - used to specify the color of text or other controls with 3 values representing red, green, and blue and a forth value representing the opacity or transparency of the swatch.
+5. letter-spacing - used to specify how distributed or tightly letters should be spaced when printed out to the screen. This is especially useful in the typewriter animation in the header of the site.
+
+JS and Bootstrap power this site as a single-page web app at https://mrmsquared.com. For this project, I've simplified the site into separate html files to show that it can function nearly the same as a single-page vs. a multi-page site.
+This version utilizes Bootstrap for a lot of layout and design. It leverages the Bootstrap JS library to display fun interactive modals specifically on the education site if you click on any of the buttons.
+The contact page on my full site actually works and leverages ajax, php, and googles recaptcha library to sollicit and send emails to myself and the sender upon contact form submission.
+For this submission, the sending functionality doesn't work but the JS-based validation powered by JS, Bootstrap, and jQuery still works and will check for correct entries and minimum field lengths in the form fields.

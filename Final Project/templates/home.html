@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <h2 class="text-center fw-bold mb-4">Welcome to</h2>
+    <h1 class="text-center display-3 fw-bold text-primary">Flomentum</h1>
+
+    <p class="text-center fs-5 mt-4">
+        Discover your optimal daily schedule based on science and personalized insights. Flomentum helps you align your activities with your natural rhythms for peak productivity, better rest, and improved well-being.
+    </p>
+
+    <a href="/dashboard" class="btn btn-lg btn-primary mt-4 px-4 py-2">Optimize My Schedule</a>
+
+    <hr class="my-5">
+
+    <!-- Features Section -->
+    <div class="row text-center">
+        <div class="col-md-4">
+            <div class="card border-primary mb-3">
+                <div class="card-header bg-primary text-white rounded-top"><h3>Personalized Schedule</h3></div>
+                <div class="card-body">
+                    <h4 class="card-title">Tailored to You</h4>
+                    <p class="card-text">Create a daily schedule that matches your energy levels, preferences, and goals.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-primary mb-3">
+                <div class="card-header bg-primary text-white rounded-top"><h3>Science-Backed Insights</h3></div>
+                <div class="card-body">
+                    <h4 class="card-title">Proven Recommendations</h4>
+                    <p class="card-text">Leverage research-backed guidance to optimize your productivity, workouts, and rest.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card border-primary mb-3">
+                <div class="card-header bg-primary text-white rounded-top"><h3>Actionable Results</h3></div>
+                <div class="card-body">
+                    <h4 class="card-title">Easy to Use</h4>
+                    <p class="card-text">Receive simple, actionable steps to implement into your daily routine.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <!-- Call to Action -->
+    <div class="text-center">
+        <h2>Ready to Begin?</h2>
+        <p class="fs-5 mt-3">Click below to get started and experience the benefits of your personalized schedule today.</p>
+        <a href="/dashboard" class="btn btn-lg btn-success px-4 py-2">Get Started</a>
+    </div>
+{% endblock %}

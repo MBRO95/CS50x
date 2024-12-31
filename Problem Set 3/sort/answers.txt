@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: sorted is so much faster compared to unsorted parts. forward and reverse is nearly the same
+
+sort2 uses: Merge Sort
+
+How do you know?: uses a new array + recursion and compares and populates new array from a split input array, "merging" the two arrays in order to a NEW array. Recursion supports highly efficient processing; resulting in best speeds.
+
+sort3 uses: Selection Sort
+
+How do you know?: sorted and unsorted are all about the same timing
